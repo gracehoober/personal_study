@@ -1,0 +1,170 @@
+[
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "position": "Senior Backend Developer",
+    "skills": ["Python", "Django", "Java"],
+    "age": 32,
+    "location": "San Francisco, CA",
+    "projects": [
+      {
+        "name": "Project E",
+        "role": "Lead Backend Developer",
+        "technologies": ["Django", "REST API", "PostgreSQL"]
+      },
+      {
+        "name": "Project F",
+        "role": "Microservices Developer",
+        "technologies": ["Flask", "Kubernetes", "MongoDB"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "position": "Frontend Engineer",
+    "skills": ["JavaScript", "React", "CSS"],
+    "age": 28,
+    "location": "New York, NY",
+    "projects": [
+      {
+        "name": "Project G",
+        "role": "Lead Frontend Developer",
+        "technologies": ["React", "Redux", "SASS"]
+      },
+      {
+        "name": "Project H",
+        "role": "UI/UX Designer",
+        "technologies": ["Figma", "Sketch", "InVision"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Robert Johnson",
+    "position": "DevOps Engineer",
+    "skills": ["Python", "Docker", "Kubernetes"],
+    "age": 35,
+    "location": "Seattle, WA",
+    "projects": [
+      {
+        "name": "Project I",
+        "role": "Lead DevOps Engineer",
+        "technologies": ["Jenkins", "Terraform", "AWS"]
+      },
+      {
+        "name": "Project J",
+        "role": "Infrastructure Architect",
+        "technologies": ["Ansible", "K8s", "GCP"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sophia Martinez",
+    "position": "Data Analyst",
+    "skills": ["Python", "SQL", "Tableau"],
+    "age": 29,
+    "location": "Chicago, IL",
+    "projects": [
+      {
+        "name": "Project K",
+        "role": "Lead Data Analyst",
+        "technologies": ["Pandas", "SQLAlchemy", "Tableau"]
+      },
+      {
+        "name": "Project L",
+        "role": "Business Intelligence",
+        "technologies": ["Power BI", "Looker", "BigQuery"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "William Anderson",
+    "position": "Full Stack Developer",
+    "skills": ["Python", "JavaScript", "React", "Node.js"],
+    "age": 31,
+    "location": "Austin, TX",
+    "projects": [
+      {
+        "name": "Project M",
+        "role": "Lead Full Stack Developer",
+        "technologies": ["React", "Node.js", "MongoDB"]
+      },
+      {
+        "name": "Project N",
+        "role": "API Developer",
+        "technologies": ["Express.js", "REST API", "MySQL"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Olivia Smith",
+    "position": "Machine Learning Engineer",
+    "skills": ["Python", "TensorFlow", "Keras"],
+    "age": 27,
+    "location": "Los Angeles, CA",
+    "projects": [
+      {
+        "name": "Project O",
+        "role": "Lead ML Engineer",
+        "technologies": ["TensorFlow", "Keras", "PyTorch"]
+      },
+      {
+        "name": "Project P",
+        "role": "AI Research",
+        "technologies": ["Django", "NLTK", "GPT"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Ethan Johnson",
+    "position": "Software Architect",
+    "skills": ["Python", "Java", "Microservices"],
+    "age": 40,
+    "location": "Boston, MA",
+    "projects": [
+      {
+        "name": "Project Q",
+        "role": "Lead Architect",
+        "technologies": ["Spring Boot", "Docker", "Kafka", "Django"]
+      },
+      {
+        "name": "Project R",
+        "role": "Cloud Integration",
+        "technologies": [
+          "AWS Lambda",
+          "Azure Functions",
+          "Google Cloud Pub/Sub"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Ava Wilson",
+    "position": "UI/UX Designer",
+    "skills": ["Figma", "Sketch", "Adobe XD"],
+    "age": 26,
+    "location": "San Diego, CA",
+    "projects": [
+      {
+        "name": "Project S",
+        "role": "Lead Designer",
+        "technologies": ["UI/UX Design", "Wireframing", "Prototyping"]
+      },
+      {
+        "name": "Project T",
+        "role": "Web Design",
+        "technologies": [
+          "Responsive Design",
+          "Material Design",
+          "User-Centered Design"
+        ]
+      }
+    ]
+  }
+]
