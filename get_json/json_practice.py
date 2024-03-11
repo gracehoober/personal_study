@@ -46,7 +46,7 @@ def collect_names():
 """ Get JSON from a file."""
 import json
 
-def empolyees_search(file_path, search_term):
+def search(file_path, search_term):
     """Takes a file and reads it. Returns true if search term is found,
      else returns false
      """
