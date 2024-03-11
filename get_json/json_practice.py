@@ -66,13 +66,18 @@ def flatten(data):
         last = len(stack) - 1 # 0
         item = stack[last] # 'cat'
         stack.pop()
-        print(stack, "stack after popping off end val")
-        
+
         if isinstance(item,list) is False and isinstance(item,dict) is False:
             list_of_vals.append(item)
         else:
-            for val in item:
-                stack.append(val)
+            if isinstance(item, dict):
+                for (key, val) in item.items():
+                    list_of_vals.append(key)
+                    list_of_vals.append(val)
+            else:
+                for val in item:
+                    stack.append(val)
+
 
     return set(list_of_vals)
 
