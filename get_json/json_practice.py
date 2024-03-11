@@ -47,24 +47,28 @@ def collect_names():
 import json
 
 def empolyees_search(file_path, search_term):
-    """Takes a file and reads it. Collects all people base
-    on provided search term."""
-    """ look through whole nested structure
-        flatten out structure... like all i need is a list of values...
-        iterate over the flattened structure for a like item
-    """
+    """Takes a file and reads it. Returns true if search term is found,
+     else returns false
+     """
+
+    with open(file_path) as file:
+        data = json.load(file)
+        flattened_data = flatten(data)
+        return True if search_term in flattened_data else False
+
+
 
 def flatten(data):
     """Takes JSON structure and returns a list of all values in the structure
         like: [{'cat': 'james', 'dog': 'marty'}, {'cow': 'spot'}]
                         -> ['cat', 'james', 'dog', 'marty', 'cow', 'spot']
     """
-    stack = [data] # []
-    list_of_vals = [] #["dog", "cat"]
+    stack = [data]
+    list_of_vals = []
 
     while(len(stack) > 0):
-        last = len(stack) - 1 # 0
-        item = stack[last] # 'cat'
+        last = len(stack) - 1
+        item = stack[last]
         stack.pop()
 
         if isinstance(item,list) is False and isinstance(item,dict) is False:
