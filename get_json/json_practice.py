@@ -5,6 +5,7 @@
 4.
 """
 import requests
+import json
 
 TVMAZE_URL = "https://api.tvmaze.com/search/shows?q=startrek"
 URL = "fakeURL.com"
@@ -49,6 +50,31 @@ def read_file(file_path, search_term):
 
     try:
         json = open(file_path)
-        print(json)
+
+        while():
+
     except FileNotFoundError:
         raise FileNotFoundError()
+
+
+read_file('./interview-example.json')
+
+def read_file_2(file_path):
+    """open file, read file, collect all projects listed in file, no dups"""
+
+    projects = []
+    with open(file_path) as file:
+        person_list = json.load(file)
+        for person in person_list:
+            for project in person["projects"]:
+                projects.append(project)
+
+    return projects
+
+
+
+def serialize():
+    """"""
+
+def deserialize_json():
+    """"""
