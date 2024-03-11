@@ -59,22 +59,23 @@ def flatten(data):
         like: [{'cat': 'james', 'dog': 'marty'}, {'cow': 'spot'}]
                         -> ['cat', 'james', 'dog', 'marty', 'cow', 'spot']
     """
-    stack = [data]
-    flattened =[]
+    stack = [data] # []
+    list_of_vals = [] #["dog", "cat"]
 
     while(len(stack) > 0):
-        last = len(stack) - 1
-        item = stack[last]
-
+        last = len(stack) - 1 # 0
+        item = stack[last] # 'cat'
+        stack.pop()
+        print(stack, "stack after popping off end val")
+        
         if isinstance(item,list) is False and isinstance(item,dict) is False:
-            flattened.append(item)
+            list_of_vals.append(item)
         else:
             for val in item:
                 stack.append(val)
 
-        stack.pop()
+    return set(list_of_vals)
 
-    return set(flattened)
 
 def all_projets(file_path):
     """Returns a list of projects"""
