@@ -1,11 +1,12 @@
-"""Write vanilla flask
+""" My notes:
 1. VENVS!!!! GRACE THINK!!! ENVIRONMENT THEN CODE!!!
 2. install python requests with pip3 install requests
-3.
+3. adding to a list is .append()
 4.
 """
+
+"""Get JSON from an API call. """
 import requests
-import json
 
 TVMAZE_URL = "https://api.tvmaze.com/search/shows?q=startrek"
 URL = "fakeURL.com"
@@ -43,24 +44,20 @@ def collect_names():
 
 
 """ Get JSON from a file."""
+import json
 
-def read_file(file_path, search_term):
-    """Takes a file and reads it. Collects all information base
+def empolyees_search(file_path, search_term):
+    """Takes a file and reads it. Collects all people base
     on provided search term."""
 
-    try:
-        json = open(file_path)
-
-        while():
-
-    except FileNotFoundError:
-        raise FileNotFoundError()
 
 
-read_file('./interview-example.json')
 
-def read_file_2(file_path):
-    """open file, read file, collect all projects listed in file, no dups"""
+
+
+
+def all_projets(file_path):
+    """Returns a list of projects"""
 
     projects = []
     with open(file_path) as file:
@@ -71,7 +68,8 @@ def read_file_2(file_path):
 
     return projects
 
-
+def project(file_path, project_name):
+    """Returns a single project based on the provided name."""
 
 def serialize():
     """"""
