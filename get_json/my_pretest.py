@@ -3,14 +3,31 @@
     convert file from json to python dict
     logic to access certain required attributes
 """
+import json
+
 FILE_PATH = "./interview-example.json"
 
 def all_employees():
-    """ Return a list of all employees above age 30. """
-    
+    """ Return a list of all employees above age 30.
+    >>> all_employees()
+    ["Michael Brown","Robert Johnson","William Anderson","Ethan Johnson"]
+    """
+
+    # above_thirty = []
+    with open(FILE_PATH) as file:
+        employees = json.load(file)
+
+        # for employee in employees:
+        #     if employee["age"] != None and employee["age"] > 30:
+        #         above_thirty.append(employee["name"])
+
+        return [employee["name"] for employee in employees if employee["age"] > 30]
+
+    # return above_thirty
 
 
 """Look to see if there is an employee whose position is 'Trophy wife'."""
+
 
 """Take a search term and return a list of empolyees whose first or l
 ast name meets that search term"""
