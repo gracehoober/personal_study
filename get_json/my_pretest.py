@@ -25,8 +25,13 @@ def all_employees():
 
     # return above_thirty
 
+def employee(position):
+    """Look to see if there is an employee whose position matches the input."""
 
-"""Look to see if there is an employee whose position is 'Trophy wife'."""
+    with open(FILE_PATH) as file:
+        employees = json.load(file)
+        return [employee["name"] for employee in employees if employee["position"] == position]
+
 
 
 """Take a search term and return a list of empolyees whose first or l
